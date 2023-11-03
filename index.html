@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="./index.css" />
+    <title>Guess The Word</title>
+  </head>
+
+  <body>
+    <div class="div-title">
+      <h1 id="title">WORD GUESSING GAME</h1>
+    </div>
+    <main>
+      <div class="div-message">
+        <h4 id="message"></h4>
+      </div>
+
+      <div class="word">
+        <table id="table1"></table>
+      </div>
+
+      <div class="div-lives">
+        <h4 id="lives"></h5>
+      </div>
+
+      <div class="container">
+        <div class="row1">
+          <div class="letter-table" id="q" onclick="playerInput('q')" >q</div>
+          <div class="letter-table" id="w" onclick="playerInput('w')" >w</div>
+          <div class="letter-table" id="e" onclick="playerInput('e')">e</div>
+          <div class="letter-table" id="r" onclick="playerInput('r')" >r</div>
+          <div class="letter-table" id="t" onclick="playerInput('t')" >t</div>
+          <div class="letter-table" id="y" onclick="playerInput('y')" >y</div>
+          <div class="letter-table" id="u" onclick="playerInput('u')" >u</div>
+          <div class="letter-table" id="i" onclick="playerInput('i')" >i</div>
+          <div class="letter-table" id="o" onclick="playerInput('o')" >o</div>
+          <div class="letter-table" id="p" onclick="playerInput('p')" >p</div>
+          <div class="letter-table" id="a" onclick="playerInput('a')" >a</div>
+          <div class="letter-table" id="s" onclick="playerInput('s')" >s</div>
+          <div class="letter-table" id="d" onclick="playerInput('d')" >d</div>
+        </div>
+        <div class="row2">
+          <div class="letter-table" id="f" onclick="playerInput('f')" >f</div>
+          <div class="letter-table" id="g" onclick="playerInput('g')" >g</div>
+          <div class="letter-table" id="h" onclick="playerInput('h')" >h</div>
+          <div class="letter-table" id="j" onclick="playerInput('j')" >j</div>
+          <div class="letter-table" id="k" onclick="playerInput('k')" >k</div>
+          <div class="letter-table" id="l" onclick="playerInput('l')" >l</div>
+          <div class="letter-table" id="z" onclick="playerInput('z')" >z</div>
+          <div class="letter-table" id="x" onclick="playerInput('x')" >x</div>
+          <div class="letter-table" id="c" onclick="playerInput('c')" >c</div>
+          <div class="letter-table" id="v" onclick="playerInput('v')" >v</div>
+          <div class="letter-table" id="b" onclick="playerInput('b')" >b</div>
+          <div class="letter-table" id="n" onclick="playerInput('n')" >n</div>
+          <div class="letter-table" id="m" onclick="playerInput('m')" >m</div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="category dropdown">
+          <span>Pick A Category:</span>
+          <div class="dropdown-content">
+            <p id="cat1">FRUIT</p>
+            <p id="cat2">CAPITAL CITIES</p>
+            <p id="cat3">ANIMALS</p>
+            <p id="cat4">COUNTRIES</p>
+          </div>
+        </div>
+        <div class="category-name">
+          <span id="cat-name">FRUIT</span>
+        </div>
+        <div class="div-button">
+          <button id="play">RESET</button>
+        </div>
+      </div>
+    </main>
+
+
+    <script src="./app.js"></script>
+  </body>
+</html>
